@@ -1,0 +1,171 @@
+/* styles.css */
+body {
+    font-family: 'Cinzel', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ede6dc; /* Новый цвет фона для body */
+}
+
+header {
+    font-family: 'Cinzel', Helvetica, Arial, sans-serif;
+    background-color: #f4ede3;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.name-title h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.name-title p {
+    margin: 0 0 0 10px; /* Добавим отступ слева */
+    font-size: 1.2rem;
+    color: #555;
+}
+
+nav {
+    margin-left: auto; /* Выравнивание nav к правому краю */
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.resume-button {
+    margin-left: 20px; /* Отступ между nav и resume-button */
+}
+
+.subtitle {
+    margin-top: 0.5rem; /* Расстояние между заголовком и подзаголовком */
+    font-size: 1rem;
+    color: #777;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header-content p {
+    margin: 0 0 0 10px; /* Добавим отступ слева */
+    font-size: 1.2rem;
+    color: #555;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    background-color: #ede6dc; /* Цвет фона за портфолио */
+}
+
+main .container {
+    max-width: 1600px; /* Увеличим ширину контейнера */
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filters button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.filters button.active,
+.filters button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.01rem; /* Уменьшим отступы между кубами */
+    justify-content: center;
+}
+
+.gallery img {
+    width: 370px;  /* Установим размер квадрата */
+    height: 370px; /* Установим размер квадрата */
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
