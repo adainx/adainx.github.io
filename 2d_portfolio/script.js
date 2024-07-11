@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [
         { 
             src: 'images/thumbnails/fr_image11-thumbnail.jpg', 
-            fullSrc: 'images/full/fr_image11.jpg', 
+            fullSrc: 'images/fr_image11.jpg', 
             category: 'freelance' 
         },
         { 
