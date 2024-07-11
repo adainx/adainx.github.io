@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyacheslav Prytula Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+	    <div class="header-content">
+	        <div class="name-title">
+	            <h1>Vyacheslav Prytula</h1>
+	            <p>2D Artist</p>
+	    </div>
+	    <nav>
+            	<a href="#">Home</a>
+	            <a href="resume/Prytula_Vyacheslav_2D_Artist_CV_2024_EN.pdf" target="_blank">Resume</a>
+            </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="filters">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="personal">Personal Stuff</button>
+                <button data-filter="freelance">Freelance</button>
+            </div>
+            <section class="gallery" id="gallery">
+                <!-- Images will be displayed here -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

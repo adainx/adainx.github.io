@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vyacheslav Prytula Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vyacheslav Prytula | First test page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header>
-	    <div class="header-content">
-	        <div class="name-title">
-	            <h1>Vyacheslav Prytula</h1>
-	            <p>2D Artist</p>
-	    </div>
-	    <nav>
-            	<a href="#">Home</a>
-	            <a href="resume/Prytula_Vyacheslav_2D_Artist_CV_2024_EN.pdf" target="_blank">Resume</a>
-            </nav>
-    </header>
-
-    <main>
-        <div class="container">
-            <div class="filters">
-                <button data-filter="all" class="active">All</button>
-                <button data-filter="personal">Personal Stuff</button>
-                <button data-filter="freelance">Freelance</button>
-            </div>
-            <section class="gallery" id="gallery">
-                <!-- Images will be displayed here -->
-            </section>
+    <div class="container">
+        <h1>Vyacheslav Prytula | Portfolio</h1>
+        <div class="buttons">
+            <a href="2d_portfolio/portfolio_2d.html" class="button">2D</a>
+            <a href="3d_portfolio/index.html" class="button">3D</a>
         </div>
-    </main>
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
