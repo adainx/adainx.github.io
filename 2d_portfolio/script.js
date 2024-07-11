@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [
         { 
             src: 'images/thumbnails/fr_image11-thumbnail.jpg', 
-            fullSrc: 'images/fr_image11.jpg', 
+            fullSrc: 'images/full/fr_image11.jpg', 
             category: 'freelance' 
         },
         { 
@@ -46,6 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
             src: 'images/thumbnails/image99-thumbnail.jpg', 
             fullSrc: 'images/image99.jpg', 
+            category: 'personal' 
+        },
+	{ 
+            src: 'images/thumbnails/image10-thumbnail.jpg', 
+            fullSrc: 'images/image10.jpg', 
+            category: 'personal' 
+        },
+	{ 
+            src: 'images/thumbnails/image9-thumbnail.jpg', 
+            fullSrc: 'images/image9.jpg', 
             category: 'personal' 
         },
         { 
