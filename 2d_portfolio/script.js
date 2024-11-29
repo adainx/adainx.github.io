@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sample images data with relative paths
     const images = [
 	{ 
+            src: 'images/thumbnails/test_HoR_1.jpg', 
+            fullSrc: 'images/fr_image_13.jpg', 
+            category: 'freelance' 
+        },
+	{ 
+            src: 'images/thumbnails/test_HoR_2.jpg', 
+            fullSrc: 'images/fr_image_12.jpg', 
+            category: 'freelance' 
+        },
+	{ 
             src: 'images/thumbnails/63_thumbnail.jpg', 
             fullSrc: 'images/63.jpg', 
             category: 'freelance' 
@@ -24,12 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'freelance' 
         },
         { 
-            src: 'images/thumbnails/fr_image8_1-thumbnail.jpg', 
+            src: 'images/thumbnails/test_HoR_3.jpg', 
             fullSrc: 'images/fr_image8_1.jpg', 
             category: 'freelance' 
         },
         { 
-            src: 'images/thumbnails/fr_image9-thumbnail.jpg', 
+            src: 'images/thumbnails/test_HoR_4.jpg', 
             fullSrc: 'images/fr_image9.jpg', 
             category: 'freelance' 
         },
