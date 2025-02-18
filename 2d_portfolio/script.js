@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sample images data with relative paths
     const images = [
 	{ 
+            src: 'images/thumbnails/fr_image_14_thumbnail.jpg', 
+            fullSrc: 'images/73.jpg', 
+            category: 'freelance' 
+        },
+	{ 
             src: 'images/thumbnails/test_HoR_1.jpg', 
             fullSrc: 'images/fr_image_13.jpg', 
             category: 'freelance' 
