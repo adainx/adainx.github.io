@@ -1,100 +1,61 @@
-/* styles.css */
+/* Общие стили для тёмной темы */
 body {
-    font-family: 'Cinzel', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ede6dc; /* Новый цвет фона для body */
+    padding-top: 100px; /* под фиксированный header */
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+/* Верхняя плашка */
 header {
-    font-family: 'Cinzel', Helvetica, Arial, sans-serif;
-    background-color: #f4ede3;
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(12px); /* Blur */
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header-content {
+    display: flex;
+    align-items: center; /* центрирование имени и меню */
+    justify-content: space-between; /* имя слева, меню справа */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 40px;
+    height: 85px; /* высота плашки */
+}
+
+.name-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* h1 и p по центру блока */
+}
+
+header nav {
     display: flex;
     align-items: center;
-}
-
-
-.name-title h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.name-title p {
-    margin: 0 0 0 10px; /* Добавим отступ слева */
-    font-size: 1.2rem;
-    color: #555;
-}
-
-nav {
-    margin-left: auto; /* Выравнивание nav к правому краю */
-}
-
-nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #333;
-}
-
-.resume-button {
-    margin-left: 20px; /* Отступ между nav и resume-button */
-}
-
-.subtitle {
-    margin-top: 0.5rem; /* Расстояние между заголовком и подзаголовком */
-    font-size: 1rem;
-    color: #777;
-}
-
-.header-content h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.header-content p {
-    margin: 0 0 0 10px; /* Добавим отступ слева */
-    font-size: 1.2rem;
-    color: #555;
-}
-
-header .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-header p {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-    color: #555;
+    gap: 20px;
 }
 
 header nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #333;
-}
-
-main {
-    background-color: #ede6dc; /* Цвет фона за портфолио */
-}
-
-main .container {
-    max-width: 1600px; /* Увеличим ширину контейнера */
-    margin: 2rem auto;
-    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif; /* или твой шрифт */
+    font-size: 1.15rem; /* подгони под размер имени */
+    font-weight: bold; /* если имя жирным */
 }
 
 .filters {
@@ -102,70 +63,45 @@ main .container {
     margin-bottom: 2rem;
 }
 
-.filters button {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
+.filter-btn {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
     border: 1px solid #333;
-    background-color: #fff;
+    padding: 10px 20px; /* было 8px 16px */
+    font-size: 1.1rem; /* можно сделать 1.1rem если нужно больше */
     cursor: pointer;
+    border-radius: 25px; /* чуть скруглить кнопки */
 }
 
-.filters button.active,
-.filters button:hover {
+.filter-btn.active,
+.filter-btn:hover {
     background-color: #333;
-    color: #fff;
 }
 
+/* Галерея */
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.01rem; /* Уменьшим отступы между кубами */
+    gap: 10px;
     justify-content: center;
 }
 
 .gallery img {
-    width: 370px;  /* Установим размер квадрата */
-    height: 370px; /* Установим размер квадрата */
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 25px;
+    width: 370px;
+    height: 370px;
     object-fit: cover;
-    cursor: pointer;
-    border: 1px solid #ddd;
 }
 
-/* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
+/* Прочее */
+button, input {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #333;
 }
 
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+button:hover, input:hover {
+    background-color: #333;
 }

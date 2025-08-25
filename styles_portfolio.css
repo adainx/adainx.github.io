@@ -1,0 +1,107 @@
+/* Общие стили для тёмной темы */
+body {
+    padding-top: 100px; /* под фиксированный header */
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 75vh; /* Добавлено для центрирования по высоте */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование содержимого по высоте */
+}
+
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+/* Верхняя плашка */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 85px;
+}
+
+.name-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+/* Сетка портфолио */
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Увеличено расстояние между блоками */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.art-block {
+    width: 370px;
+    height: 370px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.art-block:hover {
+    transform: scale(1.05);
+}
+
+.art-block img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.art-block span {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Здесь можно увеличить размер блоков, например, изменив width и height */
