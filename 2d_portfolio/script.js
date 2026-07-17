@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Sample images data with relative paths
     const images = [
 	{ 
+            src: 'images/thumbnails/85-thumbnail.jpg', 
+            fullSrc: 'images/85.jpg', 
+            category: ['freelance', 'char_design']
+        },
+	{ 
             src: 'images/thumbnails/75_thumbnail.jpg', 
             fullSrc: 'images/75.jpg', 
             category: ['freelance', 'char_design'] // Массив категорий
